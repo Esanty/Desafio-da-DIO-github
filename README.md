@@ -1,4 +1,8 @@
-# Repositório de desafio sobre Git/Github-da-DIO
+# Repositório-do-desafio-sobre-Git/Github-da-DIO
 
-## Site sobre Markdown
+## Links Úteis
+Site sobre Markdown
 https://www.markdownguide.org/
+
+site para download do Git
+https://git-scm.com/downloads
