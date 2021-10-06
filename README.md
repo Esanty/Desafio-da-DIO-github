@@ -1,2 +1,4 @@
-# Desafio-da-DIO-github
-Desafio de projeto sobre Git/Github.
+# Repositório de desafio sobre Git/Github-da-DIO
+
+## Site sobre Markdown
+https://www.markdownguide.org/
