@@ -1,0 +1,8 @@
+Cada um tem um ritmo e existem diferentes estratégias, então é necessário autoconhecimento para escolher a melhor.
+1. Resolver algum problema pessoal como forma de estudo
+2. Estudar o necessário para já aplicar, a princípio
+3. Conhecer bem a base: HTTP, Design Patterns, Paradigmas...
+4. Anotar o que pretende estudar
+5. Guardar informações: Pocket, Mem.AI
+6. Ouvir uma língua e depois ver como é a escrita/ ler um programa em uma linguagem e depois assistir um curso introdutório.
+7. ...
