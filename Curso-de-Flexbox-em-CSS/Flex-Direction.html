@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+
+    <style>
+        .container{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            max-width: 450px;
+        }
+
+        .item{
+            background-color: cornflowerblue;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: cornsilk;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .row{
+            flex-direction: row;
+        }
+
+        .rowReverse{
+            flex-direction: row-reverse;
+        }
+
+        .rowReverse li{
+            background-color: crimson;
+        }
+
+        .column{
+            float: left;
+            flex-direction: column;
+        }
+
+        .column li{
+            background-color: darkcyan;
+        }
+
+        .columnReverse{
+            float: right;
+            flex-direction: column-reverse;
+        }
+
+        .columnReverse li{
+            background-color: darkkhaki;
+        }
+    </style>
+</head>
+<body>
+    <ul class="container row">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+    </ul>
+
+    <ul class="container rowReverse">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+    </ul>
+
+    <ul class="container column">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+    </ul>
+
+    <ul class="container columnReverse">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: lightblue;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: black;
+            margin: 5px;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flexStart{
+            align-content: flex-start;
+        }
+
+        .flexEnd{
+            align-content: flex-end;
+        }
+
+        .spaceAround{
+            align-content: space-around;
+        }
+
+        .spaceBetween{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at. </div>
+        <div class="item">Lorem ipsum dolor. </div>
+        <div class="item">Morbi non lacinia lorem. Mauris. </div>
+        <div class="item">Lorem ipsum dolor. </div>
+        <div class="item">Nam sagittis ipsum quis tempus ornare. Quisque. </div>
+        <div class="item">Mauris dignissim lacus mauris eget Integer. </div>
+        <div class="item">Integer a elit nulla. Mauris rutrum mauris eget. </div>
+        <div class="item">Integer a elit nulla. Mauris rutrum mauris eget. </div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at. </div>
+        <div class="item">Lorem ipsum dolor. </div>
+        <div class="item">Morbi non lacinia lorem. Mauris. </div>
+        <div class="item">Lorem ipsum dolor. </div>
+        <div class="item">Nam sagittis ipsum quis tempus ornare. Quisque. </div>
+        <div class="item">Mauris dignissim lacus mauris eget Integer. </div>
+        <div class="item">Integer a elit nulla. Mauris rutrum mauris eget. </div>
+        <div class="item">Integer a elit nulla. Mauris rutrum mauris eget. </div>
+    </div>
+
+    <p>Flex-Start</p>
+    <div class="container flexStart">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at. </div>
+        <div class="item">Lorem ipsum dolor. </div>
+        <div class="item">Morbi non lacinia lorem. Mauris. </div>
+        <div class="item">Lorem ipsum dolor. </div>
+        <div class="item">Nam sagittis ipsum quis tempus ornare. Quisque. </div>
+        <div class="item">Mauris dignissim lacus mauris eget Integer. </div>
+        <div class="item">Integer a elit nulla. Mauris rutrum mauris eget. </div>
+        <div class="item">Integer a elit nulla. Mauris rutrum mauris eget. </div>
+    </div>
+
+    <p>Flex-End</p>
+    <div class="container flexEnd">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at. </div>
+        <div class="item">Lorem ipsum dolor. </div>
+        <div class="item">Morbi non lacinia lorem. Mauris. </div>
+        <div class="item">Lorem ipsum dolor. </div>
+        <div class="item">Nam sagittis ipsum quis tempus ornare. Quisque. </div>
+        <div class="item">Mauris dignissim lacus mauris eget Integer. </div>
+        <div class="item">Integer a elit nulla. Mauris rutrum mauris eget. </div>
+        <div class="item">Integer a elit nulla. Mauris rutrum mauris eget. </div>
+    </div>
+
+    <p>Space-Around</p>
+    <div class="container spaceAround">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at. </div>
+        <div class="item">Lorem ipsum dolor. </div>
+        <div class="item">Morbi non lacinia lorem. Mauris. </div>
+        <div class="item">Lorem ipsum dolor. </div>
+        <div class="item">Nam sagittis ipsum quis tempus ornare. Quisque. </div>
+        <div class="item">Mauris dignissim lacus mauris eget Integer. </div>
+        <div class="item">Integer a elit nulla. Mauris rutrum mauris eget. </div>
+        <div class="item">Integer a elit nulla. Mauris rutrum mauris eget. </div>
+    </div>
+
+    <p>Space-Between</p>
+    <div class="container spaceBetween">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at. </div>
+        <div class="item">Lorem ipsum dolor. </div>
+        <div class="item">Morbi non lacinia lorem. Mauris. </div>
+        <div class="item">Lorem ipsum dolor. </div>
+        <div class="item">Nam sagittis ipsum quis tempus ornare. Quisque. </div>
+        <div class="item">Mauris dignissim lacus mauris eget Integer. </div>
+        <div class="item">Integer a elit nulla. Mauris rutrum mauris eget. </div>
+        <div class="item">Integer a elit nulla. Mauris rutrum mauris eget. </div>
+    </div>
+</body>
+</html>

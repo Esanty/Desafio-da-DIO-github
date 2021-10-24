@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+
+    <style>
+        .flexContainer{
+            max-width: 350px;
+            border: black 1px solid;
+            display: flex;
+            margin: 5px;
+        }
+
+        .flexItem{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1px;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flexStart{
+            align-items: flex-start;
+        }
+
+        .flexEnd{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .flexItem{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Row</h1>
+    <p>center</p>
+    <section class="flexContainer center">
+        <div class="flexItem">Item 1</div>
+        <div class="flexItem">Lorem ipsum dolor sit amet</div>
+        <div class="flexItem">Item 3</div>
+        <div class="flexItem">Outro Item</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="flexContainer stretch">
+        <div class="flexItem">Item 1</div>
+        <div class="flexItem">Lorem ipsum dolor sit amet</div>
+        <div class="flexItem">Item 3</div>
+        <div class="flexItem">Outro Item</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="flexContainer flexStart">
+        <div class="flexItem">Item 1</div>
+        <div class="flexItem">Lorem ipsum dolor sit amet Lorem ipsum dolor</div>
+        <div class="flexItem">Item 3</div>
+        <div class="flexItem">Outro Item</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="flexContainer flexEnd">
+        <div class="flexItem">Item 1</div>
+        <div class="flexItem">Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor</div>
+        <div class="flexItem">Item 3</div>
+        <div class="flexItem">Outro Item</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="flexContainer baseline">
+        <div class="flexItem"> <br> Item 1</div>
+        <div class="flexItem">Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor</div>
+        <div class="flexItem">Item 3 mais Lorem ipsum dolor</div>
+        <div class="flexItem">Outro Item</div>
+    </section>
+
+    <h1>Column</h1>
+    
+    <p>flex-start (column)</p>
+    <section class="flexContainer flexStart column">
+        <div class="flexItem">Item 1</div>
+        <div class="flexItem">Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor</div>
+        <div class="flexItem">Item 3</div>
+        <div class="flexItem">Outro Item</div>
+    </section>
+
+    <p>flex-end (column)</p>
+    <section class="flexContainer flexEnd column">
+        <div class="flexItem">Item 1</div>
+        <div class="flexItem">Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor</div>
+        <div class="flexItem">Item 3</div>
+        <div class="flexItem">Outro Item</div>
+    </section>
+
+    <p>center (column)</p>
+    <section class="flexContainer center column">
+        <div class="flexItem">Item 1</div>
+        <div class="flexItem">Lorem ipsum dolor sit amet</div>
+        <div class="flexItem">Item 3</div>
+        <div class="flexItem">Outro Item</div>
+    </section>
+
+    <p>baseline (column)</p>
+    <section class="flexContainer baseline column">
+        <div class="flexItem"> <br> Item 1</div>
+        <div class="flexItem">Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor</div>
+        <div class="flexItem">Item 3 mais Lorem ipsum dolor</div>
+        <div class="flexItem">Outro Item</div>
+    </section>
+
+    <p>Alinhamento Central a Tela</p>
+    <section class="flexContainer central center">
+        <div class="flexItem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at. </div>
+        
+    </section>
+</body>
+</html>
